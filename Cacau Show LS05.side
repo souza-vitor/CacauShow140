@@ -1,0 +1,699 @@
+{
+  "id": "b6a7c9c4-92ae-4ca9-be69-ec6d2c4fe486",
+  "version": "2.0",
+  "name": "Cacau Show LS05",
+  "url": "https://www.cacaushow.com.br",
+  "tests": [{
+    "id": "b7321c4b-bbf3-4bac-809a-85d75bafa70f",
+    "name": "cadastro_usuario",
+    "commands": [{
+      "id": "ff9ed4a1-c1b7-4578-89b0-86c2a4d84b46",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b10c359e-865a-4b4b-98f6-8caadb4b5a6f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1656x804",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5053bfb1-5d3d-419f-bad6-2d1fd0d00bd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.user-message",
+      "targets": [
+        ["css=.user-message", "css:finder"],
+        ["xpath=//div[3]/div/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aec2bcbf-fb93-450b-a3af-60d0e1466ede",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.login .form-title",
+      "targets": [
+        ["css=.login .form-title", "css:finder"],
+        ["xpath=//div[@id='login']/form/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Entrar ou Criar Conta')]", "xpath:innerText"]
+      ],
+      "value": "Entrar ou Criar Conta"
+    }, {
+      "id": "6a2cd965-d364-4200-89b3-b30e1db442b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-form-email",
+      "targets": [
+        ["id=login-form-email", "id"],
+        ["name=loginEmail", "name"],
+        ["css=#login-form-email", "css:finder"],
+        ["xpath=//input[@id='login-form-email']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40bf48b3-0bca-43f2-9eee-1ad89bb58d9e",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-form-email",
+      "targets": [
+        ["id=login-form-email", "id"],
+        ["name=loginEmail", "name"],
+        ["css=#login-form-email", "css:finder"],
+        ["xpath=//input[@id='login-form-email']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "test001@testepersonalizado.com"
+    }, {
+      "id": "8dcef8d0-6aef-41d2-95f7-c0487e8751b8",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-btn-toggle",
+      "targets": [
+        ["id=login-btn-toggle", "id"],
+        ["css=#login-btn-toggle", "css:finder"],
+        ["xpath=//button[@id='login-btn-toggle']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/form/button", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div/div/div/form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd607c25-ec50-4ece-ba0f-c1dac13edf71",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-title-container:nth-child(1) > .form-title",
+      "targets": [
+        ["css=.form-title-container:nth-child(1) > .form-title", "css:finder"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div/h1", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div[2]/form/div/h1", "xpath:position"]
+      ],
+      "value": "Criar Conta"
+    }, {
+      "id": "f1d48580-bb3c-41c4-bfb4-b42aa98f9be7",
+      "comment": "",
+      "command": "click",
+      "target": "id=registration-form-fname",
+      "targets": [
+        ["id=registration-form-fname", "id"],
+        ["name=dwfrm_profile_customer_firstname", "name"],
+        ["css=#registration-form-fname", "css:finder"],
+        ["xpath=//input[@id='registration-form-fname']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dda8473d-44ca-414e-b211-99777abbf908",
+      "comment": "",
+      "command": "type",
+      "target": "id=registration-form-fname",
+      "targets": [
+        ["id=registration-form-fname", "id"],
+        ["name=dwfrm_profile_customer_firstname", "name"],
+        ["css=#registration-form-fname", "css:finder"],
+        ["xpath=//input[@id='registration-form-fname']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": "Testonildo"
+    }, {
+      "id": "e7702459-14e0-4322-bd36-cb062c09339a",
+      "comment": "",
+      "command": "click",
+      "target": "id=registration-form-lname",
+      "targets": [
+        ["id=registration-form-lname", "id"],
+        ["name=dwfrm_profile_customer_lastname", "name"],
+        ["css=#registration-form-lname", "css:finder"],
+        ["xpath=//input[@id='registration-form-lname']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28fa0b3d-dc4a-4f77-90c2-63ad2d464070",
+      "comment": "",
+      "command": "type",
+      "target": "id=registration-form-lname",
+      "targets": [
+        ["id=registration-form-lname", "id"],
+        ["name=dwfrm_profile_customer_lastname", "name"],
+        ["css=#registration-form-lname", "css:finder"],
+        ["xpath=//input[@id='registration-form-lname']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Da Silva"
+    }, {
+      "id": "310ca52a-e9a6-4645-b41e-8af8d0f99949",
+      "comment": "",
+      "command": "click",
+      "target": "id=registration-form-bdate",
+      "targets": [
+        ["id=registration-form-bdate", "id"],
+        ["name=dwfrm_profile_customer_birthdate", "name"],
+        ["css=#registration-form-bdate", "css:finder"],
+        ["xpath=//input[@id='registration-form-bdate']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83d1b09f-641f-4271-a50b-6844a29941fb",
+      "comment": "",
+      "command": "type",
+      "target": "id=registration-form-bdate",
+      "targets": [
+        ["id=registration-form-bdate", "id"],
+        ["name=dwfrm_profile_customer_birthdate", "name"],
+        ["css=#registration-form-bdate", "css:finder"],
+        ["xpath=//input[@id='registration-form-bdate']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "01/01/1999"
+    }, {
+      "id": "27092402-2d19-4911-b8a7-08abf2e29e59",
+      "comment": "",
+      "command": "click",
+      "target": "id=registration-form-gender",
+      "targets": [
+        ["id=registration-form-gender", "id"],
+        ["name=dwfrm_profile_customer_gender", "name"],
+        ["css=#registration-form-gender", "css:finder"],
+        ["xpath=//select[@id='registration-form-gender']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div[7]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e8849a5-3f86-4d6a-b395-bb65519c3eea",
+      "comment": "",
+      "command": "select",
+      "target": "id=registration-form-gender",
+      "targets": [],
+      "value": "label=Masculino"
+    }, {
+      "id": "7a5c5e81-706e-4c63-930f-1a359f57497f",
+      "comment": "",
+      "command": "click",
+      "target": "id=registration-form-cpf",
+      "targets": [
+        ["id=registration-form-cpf", "id"],
+        ["name=dwfrm_profile_customer_cpf", "name"],
+        ["css=#registration-form-cpf", "css:finder"],
+        ["xpath=//input[@id='registration-form-cpf']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ab1e466-6586-4f1a-a8bd-64080db43556",
+      "comment": "",
+      "command": "type",
+      "target": "id=registration-form-cpf",
+      "targets": [
+        ["id=registration-form-cpf", "id"],
+        ["name=dwfrm_profile_customer_cpf", "name"],
+        ["css=#registration-form-cpf", "css:finder"],
+        ["xpath=//input[@id='registration-form-cpf']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": "000.111.222-33"
+    }, {
+      "id": "6e4da01c-04f6-4132-9f28-de2735615fc0",
+      "comment": "",
+      "command": "click",
+      "target": "id=registration-form-phone",
+      "targets": [
+        ["id=registration-form-phone", "id"],
+        ["name=dwfrm_profile_customer_phone", "name"],
+        ["css=#registration-form-phone", "css:finder"],
+        ["xpath=//input[@id='registration-form-phone']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div[9]/input", "xpath:idRelative"],
+        ["xpath=//div[9]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cbe2591-b830-40c6-b5e2-c4c23a38bc85",
+      "comment": "",
+      "command": "type",
+      "target": "id=registration-form-phone",
+      "targets": [
+        ["id=registration-form-phone", "id"],
+        ["name=dwfrm_profile_customer_phone", "name"],
+        ["css=#registration-form-phone", "css:finder"],
+        ["xpath=//input[@id='registration-form-phone']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div[9]/input", "xpath:idRelative"],
+        ["xpath=//div[9]/input", "xpath:position"]
+      ],
+      "value": "+5521999998888"
+    }, {
+      "id": "fbf7e288-92bf-4cda-a985-c0941cf9fa22",
+      "comment": "",
+      "command": "click",
+      "target": "id=registration-form-email-confirm",
+      "targets": [
+        ["id=registration-form-email-confirm", "id"],
+        ["name=dwfrm_profile_customer_emailconfirm", "name"],
+        ["css=#registration-form-email-confirm", "css:finder"],
+        ["xpath=//input[@id='registration-form-email-confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div[11]/input", "xpath:idRelative"],
+        ["xpath=//div[11]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "003024a7-bcfa-4bcc-8410-1ea276836a8a",
+      "comment": "",
+      "command": "type",
+      "target": "id=registration-form-email-confirm",
+      "targets": [
+        ["id=registration-form-email-confirm", "id"],
+        ["name=dwfrm_profile_customer_emailconfirm", "name"],
+        ["css=#registration-form-email-confirm", "css:finder"],
+        ["xpath=//input[@id='registration-form-email-confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div[11]/input", "xpath:idRelative"],
+        ["xpath=//div[11]/input", "xpath:position"]
+      ],
+      "value": "test001@testepersonalizado.com"
+    }, {
+      "id": "198099ff-16c9-41a2-ac68-5a96b6bbac36",
+      "comment": "",
+      "command": "click",
+      "target": "id=registration-form-password",
+      "targets": [
+        ["id=registration-form-password", "id"],
+        ["name=dwfrm_profile_login_password", "name"],
+        ["css=#registration-form-password", "css:finder"],
+        ["xpath=//input[@id='registration-form-password']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div[12]/input", "xpath:idRelative"],
+        ["xpath=//div[12]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "648512a6-8239-42da-b401-cb73f75607d2",
+      "comment": "",
+      "command": "type",
+      "target": "id=registration-form-password",
+      "targets": [
+        ["id=registration-form-password", "id"],
+        ["name=dwfrm_profile_login_password", "name"],
+        ["css=#registration-form-password", "css:finder"],
+        ["xpath=//input[@id='registration-form-password']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div[12]/input", "xpath:idRelative"],
+        ["xpath=//div[12]/input", "xpath:position"]
+      ],
+      "value": "amotestes10!A"
+    }, {
+      "id": "0eb96f09-f826-47fe-9bc9-43ad90bd25f1",
+      "comment": "",
+      "command": "click",
+      "target": "id=registration-form-password-confirm",
+      "targets": [
+        ["id=registration-form-password-confirm", "id"],
+        ["name=dwfrm_profile_login_passwordconfirm", "name"],
+        ["css=#registration-form-password-confirm", "css:finder"],
+        ["xpath=//input[@id='registration-form-password-confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div[13]/input", "xpath:idRelative"],
+        ["xpath=//div[13]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "035965d1-7ae6-495d-83c6-2579f307da0a",
+      "comment": "",
+      "command": "type",
+      "target": "id=registration-form-password-confirm",
+      "targets": [
+        ["id=registration-form-password-confirm", "id"],
+        ["name=dwfrm_profile_login_passwordconfirm", "name"],
+        ["css=#registration-form-password-confirm", "css:finder"],
+        ["xpath=//input[@id='registration-form-password-confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div[13]/input", "xpath:idRelative"],
+        ["xpath=//div[13]/input", "xpath:position"]
+      ],
+      "value": "amotestes10!A"
+    }, {
+      "id": "85616338-1ad4-4aa6-b585-9ff569cf87ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-control-label",
+      "targets": [
+        ["css=.custom-control-label", "css:finder"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/div[14]/label", "xpath:idRelative"],
+        ["xpath=//div[14]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Li e aceito os Termos e Condições, as Políticas de Privacidade e o Regulamento do Programa de Fidelidade Cacau Lovers.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f43316f-34ee-4950-a87f-017b181213e3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn:nth-child(16)",
+      "targets": [
+        ["css=.btn:nth-child(16)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div/div/div[2]/form/button", "xpath:position"]
+      ],
+      "value": "CRIAR CONTA"
+    }, {
+      "id": "cac63b2c-f6f4-40e6-8fe4-b6d765b6e209",
+      "comment": "",
+      "command": "click",
+      "target": "css=.it_header--logo",
+      "targets": [
+        ["css=.it_header--logo", "css:finder"],
+        ["xpath=//img[@alt='Cacau Show']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "13994952-6e95-472a-bd04-8b638fa79fc7",
+    "name": "comprar_produto",
+    "commands": [{
+      "id": "5189b9db-12dc-4012-b2f9-1b3139834ee5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "264028fc-43b5-4f35-ac9a-f331e1ce8a4c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1656x804",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a397e315-6e4a-40ed-95e5-abf0decff247",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8504db01-9110-4146-a924-9e2a9629fd40",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "Caixa de Bombons Sortidos Angel"
+    }, {
+      "id": "19603b06-91d0-41f5-9f54-3aba1a212dbd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product-0 .name",
+      "targets": [
+        ["css=#product-0 .name", "css:finder"],
+        ["xpath=//li[@id='product-0']/a/div/span", "xpath:idRelative"],
+        ["xpath=//li[2]/ul/li/a/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Caixa de Tabletes Miau 210g')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82306564-776c-4f38-a1d4-5d77c9d2c984",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product-name",
+      "targets": [
+        ["css=.product-name", "css:finder"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/div[2]/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Caixa de Tabletes Miau 210g')]", "xpath:innerText"]
+      ],
+      "value": "Caixa de Bombons Sortidos Angel Coração 290g"
+    }, {
+      "id": "72643785-a7d2-41d5-aa0a-467815cda828",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.prices .it__shelf__discountPrice > span:nth-child(2)",
+      "targets": [
+        ["css=.prices .it__shelf__discountPrice > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/div[2]/div[6]/div/div/div/div/div/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/div/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'49.99')]", "xpath:innerText"]
+      ],
+      "value": "99.99"
+    }, {
+      "id": "1b5e469b-e829-4c4c-b0da-00583a013f08",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-add-to-cart",
+      "targets": [
+        ["css=.text-add-to-cart", "css:finder"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/div[2]/div[6]/div[2]/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": "ADICIONAR AO CARRINHO"
+    }, {
+      "id": "4c10ad98-77fb-49af-9233-a8e71f69f7df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-add-to-cart",
+      "targets": [
+        ["css=.text-add-to-cart", "css:finder"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/div[2]/div[6]/div[2]/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cd7abb3-1bfd-4e53-8c16-5cd257f3805b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.text-add-to-cart",
+      "targets": [
+        ["css=.text-add-to-cart", "css:finder"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/div[2]/div[6]/div[2]/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbc2592e-19c6-443e-a329-93e9d6205399",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.text-add-to-cart",
+      "targets": [
+        ["css=.text-add-to-cart", "css:finder"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div[2]/div[2]/div[6]/div[2]/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd012fb8-b514-4f8d-8b84-770d7ad07532",
+      "comment": "",
+      "command": "click",
+      "target": "css=.it__minicart .minicart-icon",
+      "targets": [
+        ["css=.it__minicart .minicart-icon", "css:finder"],
+        ["xpath=//div[2]/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "659b167c-178a-4aa1-8071-c370ef57d16b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-title",
+      "targets": [
+        ["css=.page-title", "css:finder"],
+        ["xpath=//div[@id='maincontent']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Carrinho de Compra')]", "xpath:innerText"]
+      ],
+      "value": "Carrinho de Compra"
+    }, {
+      "id": "1e17ab37-0780-4b48-b8c0-976a45681b7b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.it__minicart .minicart-quantity",
+      "targets": [
+        ["css=.it__minicart .minicart-quantity", "css:finder"],
+        ["xpath=//div[2]/div/div/a/span", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "31960a06-c396-4bfe-92a8-30340b6f18e3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.line-item-name",
+      "targets": [
+        ["css=.line-item-name", "css:finder"],
+        ["xpath=//div[@id='maincontent']/div/div[2]/div/div/div/div/div/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Caixa de Bombons Sortidos Angel Coração 290g"
+    }, {
+      "id": "9ffcbc44-36c0-4878-8617-8929fa956344",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.line-item-total-price-amount",
+      "targets": [
+        ["css=.line-item-total-price-amount", "css:finder"],
+        ["xpath=//div[@id='maincontent']/div/div[2]/div/div/div/div[2]/div/div[3]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/div/div[2]", "xpath:position"]
+      ],
+      "value": "R$99.99"
+    }, {
+      "id": "63730f51-38ea-46c0-8489-926c96ea5df1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.checkout-btn",
+      "targets": [
+        ["css=.checkout-btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Finalizar Compra')]", "xpath:link"],
+        ["xpath=//div[@id='maincontent']/div/div[2]/div[2]/div[4]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.cacaushow.com.br/checkout-login')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"]
+      ],
+      "value": "FINALIZAR COMPRA"
+    }, {
+      "id": "09f10b30-9d54-41cf-9156-cb2c8ea19575",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hidden-md-down > .remove-product",
+      "targets": [
+        ["css=.hidden-md-down > .remove-product", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee3e02f5-55ae-4e5c-8e72-aa3f00fe6661",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=removeProductLineItemModal",
+      "targets": [
+        ["id=removeProductLineItemModal", "id"],
+        ["css=#removeProductLineItemModal", "css:finder"],
+        ["xpath=//h2[@id='removeProductLineItemModal']", "xpath:attributes"],
+        ["xpath=//div[@id='removeProductModal']/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Remover produto ?')]", "xpath:innerText"]
+      ],
+      "value": "Remover produto ?"
+    }, {
+      "id": "53521e89-64f5-452a-ba41-ec70f2c2281b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-delete-confirmation-btn",
+      "targets": [
+        ["css=.cart-delete-confirmation-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[46]", "xpath:attributes"],
+        ["xpath=//div[@id='removeProductModal']/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4ad0f0e-ce06-451e-829e-dfba929227f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.it_header--logo",
+      "targets": [
+        ["css=.it_header--logo", "css:finder"],
+        ["xpath=//img[@alt='Cacau Show']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "296f661c-0855-4d9c-80f3-245f1b4226c7",
+    "name": "comprar_pelo_whatsapp",
+    "commands": [{
+      "id": "c0ae8810-d85f-47f8-894f-6e83d1afabf0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e6ad01f-7815-4b17-aef7-bc5d5e23296b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1656x804",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e74ade7c-755a-4476-bc01-6c0ab9d3ad25",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.hidden-sm-down li:nth-child(1) .it__above--text > span",
+      "targets": [
+        ["css=.hidden-sm-down li:nth-child(1) .it__above--text > span", "css:finder"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "COMPRE PELO WHATSAPP"
+    }, {
+      "id": "e5d117c6-ede8-408c-b7c3-12450132427b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hidden-sm-down li:nth-child(1) .it__above--text > span",
+      "targets": [
+        ["css=.hidden-sm-down li:nth-child(1) .it__above--text > span", "css:finder"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9008",
+      "windowTimeout": 2000
+    }, {
+      "id": "d70f2431-2412-4833-8610-ed7c4cab0345",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9008}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90c07918-b5bb-461a-a4c7-71fbe5ef1408",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.\\_9vd6:nth-child(1) > .\\_9vd5:nth-child(2)",
+      "targets": [
+        ["css=.\\_9vd6:nth-child(1) > .\\_9vd5:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='main_block']/div/h3", "xpath:idRelative"],
+        ["xpath=//div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Cacau Show Delivery')]", "xpath:innerText"]
+      ],
+      "value": "Cacau Show Delivery"
+    }, {
+      "id": "9950f4ac-3aad-4a0d-a5f3-126402631cc4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#action-button > .\\_advp",
+      "targets": [
+        ["css=#action-button > .\\_advp", "css:finder"],
+        ["xpath=//a[@id='action-button']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Iniciar conversa')]", "xpath:innerText"]
+      ],
+      "value": "Iniciar conversa"
+    }]
+  }],
+  "suites": [{
+    "id": "475a4e6e-1d14-4efa-9ab1-21b9f6c6e2c1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b7321c4b-bbf3-4bac-809a-85d75bafa70f"]
+  }],
+  "urls": ["https://www.cacaushow.com.br/"],
+  "plugins": []
+}
